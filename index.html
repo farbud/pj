@@ -7,20 +7,28 @@
     <title>Cart Quantity</title>
 </head>
 
+<style>
+    button{
+        width: 100px;
+        height: 100px;
+        font-size: 20px;
+    }
+</style>
+
 <body>
     <button onclick="
         console.log(`Cart quantity: ${cartQuanity}`);
         ">Show Quantity</button>
     <button onclick="
-        cartQuanity = cartQuanity + 1;
+        cartQuanity ++ 1;
         console.log(`Cart quantity: ${cartQuanity}`);
     ">Add to Cart</button>
     <button onclick="
-        cartQuanity = cartQuanity + 2;
+        cartQuanity += 2;
         console.log(`Cart quantity: ${cartQuanity}`);
     ">+2</button>
     <button onclick="
-        cartQuanity = cartQuanity + 3;
+        cartQuanity += 3;
         console.log(`Cart quantity: ${cartQuanity}`);
     ">+3</button>
     <button onclick="
