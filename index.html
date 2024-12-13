@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cart Quantity</title>
 </head>
+
 <body>
     <button onclick="
-        console.log('Cart quanity: 0');
+        console.log(`Cart quantity: ${cartQuanity}`);
         ">Show Quantity</button>
-    <button>Add to Cart</button>
+    <button onclick="
+        cartQuanity = cartQuanity + 1;
+        console.log(`Cart quantity: ${cartQuanity}`);
+    ">Add to Cart</button>
     <button>+2</button>
     <button>+3</button>
     <button>Reset Cart</button>
@@ -18,4 +23,5 @@
         let cartQuanity = 0;
     </script>
 </body>
+
 </html>
